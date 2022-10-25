@@ -131,3 +131,4 @@ dmypy.json
 # Project data and misc
 ExperimentInfo/
 neuro_data/
+TFR_Plots/
