@@ -1,0 +1,13 @@
+These are the top 4 parameter combinations determined through 240 trials with Optuna on EEGNET.
+
+1.
+[I 2022-11-01 23:10:03,922] Trial 70 finished with value: 0.6785714030265808 and parameters: {'filter_sizing': 4, 'dropout': 0.2162309881947328, 'Depth Parameter': 2, 'receptive_field': 320, 'learning_rate': 0.00036354340185599984}. Best is trial 70 with value: 0.6785714030265808.
+
+2.
+[I 2022-11-01 23:01:13,289] Trial 66 finished with value: 0.6428571343421936 and parameters: {'filter_sizing': 4, 'dropout': 0.21158085082372297, 'Depth Parameter': 2, 'receptive_field': 320, 'learning_rate': 0.0007412056300653439}. Best is trial 66 with value: 0.6428571343421936.
+
+3.
+[I 2022-11-01 20:55:24,387] Trial 27 finished with value: 0.625 and parameters: {'filter_sizing': 3, 'dropout': 0.20152342696470651, 'Depth Parameter': 2, 'receptive_field': 640, 'learning_rate': 0.0028070329694083558}. Best is trial 4 with value: 0.625.
+
+4.
+[I 2022-11-01 19:46:08,297] Trial 4 finished with value: 0.625 and parameters: {'filter_sizing': 4, 'dropout': 0.7211572635230841, 'Depth Parameter': 3, 'receptive_field': 576, 'learning_rate': 1.2393795057334632e-06}. Best is trial 4 with value: 0.625.
