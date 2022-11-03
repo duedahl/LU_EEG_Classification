@@ -1,13 +1,25 @@
-These are the top 4 parameter combinations determined through 240 trials with Optuna on EEGNET.
+These are the top parameter combinations determined through 240 trials with Optuna on EEGNET.
+
+First run, train/test split done in training loop
 
 1.
 [I 2022-11-01 23:10:03,922] Trial 70 finished with value: 0.6785714030265808 and parameters: {'filter_sizing': 4, 'dropout': 0.2162309881947328, 'Depth Parameter': 2, 'receptive_field': 320, 'learning_rate': 0.00036354340185599984}. Best is trial 70 with value: 0.6785714030265808.
 
-2.
 [I 2022-11-01 23:01:13,289] Trial 66 finished with value: 0.6428571343421936 and parameters: {'filter_sizing': 4, 'dropout': 0.21158085082372297, 'Depth Parameter': 2, 'receptive_field': 320, 'learning_rate': 0.0007412056300653439}. Best is trial 66 with value: 0.6428571343421936.
 
-3.
 [I 2022-11-01 20:55:24,387] Trial 27 finished with value: 0.625 and parameters: {'filter_sizing': 3, 'dropout': 0.20152342696470651, 'Depth Parameter': 2, 'receptive_field': 640, 'learning_rate': 0.0028070329694083558}. Best is trial 4 with value: 0.625.
 
-4.
 [I 2022-11-01 19:46:08,297] Trial 4 finished with value: 0.625 and parameters: {'filter_sizing': 4, 'dropout': 0.7211572635230841, 'Depth Parameter': 3, 'receptive_field': 576, 'learning_rate': 1.2393795057334632e-06}. Best is trial 4 with value: 0.625.
+
+
+2nd run, train/test split done outside training loop (since seed wasn't reset every run, might still be more random than desired)
+
+[I 2022-11-03 04:23:07,262] Trial 211 finished with value: 0.6415094137191772 and parameters: {'filter_sizing': 3, 'dropout': 0.7754173183532586, 'Depth Parameter': 1, 'receptive_field': 640, 'learning_rate': 6.996303001879314e-06}. Best is trial 211 with value: 0.6415094137191772.
+
+[I 2022-11-03 00:23:59,943] Trial 132 finished with value: 0.6226415038108826 and parameters: {'filter_sizing': 3, 'dropout': 0.7065437068935853, 'Depth Parameter': 4, 'receptive_field': 640, 'learning_rate': 1.2809395120282608e-05}. Best is trial 35 with value: 0.6226415038108826.
+
+[I 2022-11-03 00:09:27,766] Trial 128 finished with value: 0.6226415038108826 and parameters: {'filter_sizing': 3, 'dropout': 0.7681192887461447, 'Depth Parameter': 1, 'receptive_field': 640, 'learning_rate': 1.4586732899042476e-05}. Best is trial 35 with value: 0.6226415038108826.
+
+[I 2022-11-02 20:28:29,358] Trial 60 finished with value: 0.6226415038108826 and parameters: {'filter_sizing': 3, 'dropout': 0.6987188250279202, 'Depth Parameter': 3, 'receptive_field': 640, 'learning_rate': 7.912534216035847e-06}. Best is trial 35 with value: 0.6226415038108826.
+
+[I 2022-11-02 19:04:30,085] Trial 35 finished with value: 0.6226415038108826 and parameters: {'filter_sizing': 4, 'dropout': 0.6263835549332981, 'Depth Parameter': 2, 'receptive_field': 640, 'learning_rate': 1.0716078506996685e-05}. Best is trial 35 with value: 0.6226415038108826.
