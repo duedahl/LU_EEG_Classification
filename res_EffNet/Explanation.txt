@@ -1,0 +1,7 @@
+Naming Convention:
+
+PT = Pre-trained
+UT = Not PT
+Tune = train all weights
+Freeze = freeze all weights except fully connected
+RGB = Results from RGB image, Subject 10, Intra personal inference
