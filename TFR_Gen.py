@@ -58,7 +58,7 @@ def genGC3(dir, label, picks, epochs, newfreq):
     for i, lab in enumerate(label):
         filepath = join(dir, lab, str(i)+".png")
         # Morlet transform
-        power = mne.time_frequency.tfr_morlet(epochs[0],picks=picks, freqs=freqs, n_cycles=n_cycles, use_fft=True, return_itc=False, decim=1)
+        power = mne.time_frequency.tfr_morlet(epochs[i],picks=picks, freqs=freqs, n_cycles=n_cycles, use_fft=True, return_itc=False, decim=1)
         # Extract data and convert to image
         rgb = np.log(power.data[:,:,startindex:endindex])
         rgb = np.transpose(rgb,(1,2,0))
@@ -76,13 +76,13 @@ def genGC3(dir, label, picks, epochs, newfreq):
 # Generate TFR to fit the 384x384 format ^
 
 # Loop for generating all GC3 images, (grayscale in 3 channels)
-"""
+
 for subject in range(10,16):
     epochs = LoadData(subject,newfreq=64)
     eventdict = {1:"left", 2:"right"}
     label = [eventdict[i] for i in epochs.events[:,2]]
     rootdir = join("TFR_plots","GC3","Subject"+str(subject))
     genGC3(rootdir,label,["T8","Cz","T7"],epochs,64)
-"""
+
 
 #genMorletColored(join("TFR_plots","T8Colored","Subject"+str(subject)),"T8",epochs_resampled)
