@@ -5,3 +5,7 @@ UT = Not PT
 Tune = train all weights
 Freeze = freeze all weights except fully connected
 RGB = Results from RGB image, Subject 10, Intra personal inference
+
+
+Architecture:
+https://arxiv.org/pdf/2104.00298.pdf
