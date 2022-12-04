@@ -1,5 +1,5 @@
 {
-    "Tune FC": {
+    "RGB_Tune_FC": {
         "loss": {
             "train": [
                 0.7836357659114761,
