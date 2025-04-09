@@ -5,14 +5,21 @@ This project employed inductive transfer learning to classify Time-Frequency tra
 
 The InterSubTL branch contains the code used for the Inter-Subject Transfer Learning section, along with the significance testing of these.
 
-This repository includes:
-* DataExploration.ipynb - Containins the code used to investigate the matlab data files.
-* DataPreparation.ipynb - Contains the code used to convert matlab data to MNE FIF format.
-* NN_EEGNET.ipynb - Code for the CNN called EEGNET, not contained in project, this was abandoned in favor of deep pre-trained CNNs.
-* NN_EFFNET.ipynb - Code for training of EfficientNet V2.
-* NN_ResNet.ipynb - Code for training ResNet18.
-* TFR_Gen.py - Code to generate all the TFR visuals and save them.
-* Visuals2.ipynb - Code generating MNE visuals.
-* Visuals_Res.ipynb - Code generating visuals of results.
+## Repository Structure
 
-Directories whose names start with "res_" contain results, images, loss and validation accuracy data.
+```bash
+.
+├── res_DataVisualization/    # Results and visualizations of EEG data
+├── res_EEGNET/               # Results from EEGNET model experiments
+├── res_EffNet/               # Results from EfficientNet experiments
+├── res_ResNet/               # Results from ResNet experiments
+├── DataExploration.ipynb     # Code for exploring the MATLAB data files
+├── DataPreparation.ipynb     # Code for converting MATLAB data to MNE FIF format
+├── NN_EEGNET.ipynb           # Implementation of the EEGNET model (deprecated)
+├── NN_EffNet.ipynb           # Implementation and training of EfficientNet V2
+├── NN_ResNet.ipynb           # Implementation and training of ResNet18
+├── Report.pdf                # The project report compiled from Overleaf
+├── TFR_Gen.py                # Script for generating Time-Frequency Representation visuals
+├── Visuals2.ipynb            # Code for generating MNE visualizations
+├── Visuals_Res.ipynb         # Code for visualizing experimental results
+```
